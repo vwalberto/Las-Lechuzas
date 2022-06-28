@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    
+    
+    <%- include ('../partials/head.ejs') %>  
+</head>
+<body>
+    <%- include ('../partials/header.ejs') %>
+<main>
+    
+    <div class="container">
+
+        <% for(let servicio of servicios) { %>
+            <div class="row">
+                <div class="col-4"><%=servicio.id %></div>
+                <div class="col-4"><%=servicio.nombre %></div>
+                <div class="col-4"><a href="servicios/detail/<%=servicio.id %>">Editar</a></div>
+            </div>
+
+
+        <% } %>
+    </div>
+  
+   
+          
+   
+  
+</main>
+    <%- include ('../partials/footer') %>
+       
+
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+[
+	{
+		"id": 1,
+		"nombre": "Wal",
+        "apellido" : "Vera",
+        "dni": "38542159",
+        "numero Lote":"199",
+        "telefono": "351123123",		
+		"tipo" :"propietario",
+        "email": "Wal@gmail.com",
+		"password": "124124",		
+		"imagen": ""
+	},
+
+	{
+		"id": 2,
+		"nombre": "Usuario x",
+        "apellido" : "Lopez",
+        "dni": "38545777",
+        "numero Lote":"102",
+        "telefono": "353253123",		
+		"tipo" :"propietario",
+        "email": "usuariox@gmail.com",
+		"password": "2222",
+		"imagen": "image1.jpg"
+	},
+
+	{
+		"id": 3,
+		"nombre": "Andrea",
+        "apellido" : "Jimenez",
+        "dni": "25675777",
+        "numero Lote":"033",
+        "telefono": "389753123",		
+		"tipo" :"administrador",
+        "email": "AndreaAdmin@gmail.com",
+		"password":  "$2a$10$xzKmg9WCJk5fFvEa5Tizm.3/SOLRa1DXq0sWdhticpgPGbr4ZjOu6",		
+		"imagen": "image2.jpg"
+	},
+
+	{
+		"id": 4,
+		"nombre": "Juan",
+        "apellido" : "Delgado",
+        "dni": "39673677",
+        "numero Lote":"148",
+        "telefono": "389730103",		
+		"tipo" :"administrador",
+        "email": "JuanAdmin@gmail.com",
+		"password":  "$2a$10$xzKmg9WCJk5fFvEa5Tizm.3/SOLRa1DXq0sWdhticpgPGbr4ZjOu6",	
+		"imagen": "image3.jpg"
+	},
+
+	{
+		"id": 5,
+		"nombre": "Sabrina",
+        "apellido" : "Barrera",
+        "dni": "29233677",
+        "numero Lote":"040",
+        "telefono": "389700128",		
+		"tipo" :"Propietario",
+        "email": "Sabrina@gmail.com",
+		"password":  "45678",	
+		"imagen": "image4.jpg"
+	}
+
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+

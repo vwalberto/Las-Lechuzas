@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+   
+
+    <%- include ('../partials/head') %>
+</head>
+<body>
+    <%- include ('../partials/header') %>
+
+    
+        <div id="header">
+        <h1 class="logo"><a title="Las Lechuzas-Barrio de Campo">
+        <img src="images/logoBuho.JPEG" ></a>
+        
+        
+        <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+          <h3 class="w3-center">LAS LECHUZAS-Barrio de campo</h3>
+          <p class="w3-center w3-large">Crear cuenta de usuario</p>
+          <div style="margin-top:48px">
+        <form action="/usuarios/formRegistro.ejs" method="post" enctype="multipart/form-data" name="form1" id="form1 ">
+          <br>
+          <form action="contacto" method="post" target="_blank">
+            
+            <p><input  style="width:600px" type="text" placeholder="Nombre" name="Name"class="w3-input w3-border" class="nombre llenar form-control <%= locals.errors && errors.nombre ? 'is-invalid' : null %>"           
+              value= "<%= locals.oldData ? oldData.nombre : null%>">
+              <% if (locals.errors && errors.nombre) { %>
+                <div class="text-error"> 
+                  <%= errors.nombre.msg %>
+                </div></p>
+              <% } %>
+            
+              <p><input style="width:600px" type="text" placeholder="Apellido" name="Apellido" class="w3-input w3-border" class="apellido llenar form-control <%= locals.errors && errors.apellido ? 'is-invalid' : null %>"           
+                value= "<%= locals.oldData ? oldData.apellido : null%>">
+                <% if (locals.errors && errors.apellido) { %>
+                  <div class="text-error"> 
+                    <%= errors.apellido.msg %>
+                  </div></p>
+
+                  <p><input style="width:600px" type="text" placeholder="DNI" name="DNI" class="w3-input w3-border" class="dni llenar form-control <%= locals.errors && errors.dni ? 'is-invalid' : null %>"           
+                    value= "<%= locals.oldData ? oldData.dni : null%>">
+                    <% if (locals.errors && errors.dni) { %>
+                      <div class="text-error"> 
+                        <%= errors.dni.msg %>
+                      </div></p>
+
+
+                      <p><input style="width:600px" type="text" placeholder="Numero-Lote" name="Numero-Lote" class="w3-input w3-border" class="Numero-Lote llenar form-control <%= locals.errors && errors.Numero-Lote ? 'is-invalid' : null %>"           
+                        value= "<%= locals.oldData ? oldData.Numero-Lote : null%>">
+                        <% if (locals.errors && errors.Numero-Lote) { %>
+                          <div class="text-error"> 
+                            <%= errors.Numero-Lote.msg %>
+                          </div></p>
+                
+                          <p><input style="width:600px" type="text" placeholder="Teléfono" name="Teléfono" class="w3-input w3-border" class="Teléfono llenar form-control <%= locals.errors && errors.Teléfono ? 'is-invalid' : null %>"           
+                            value= "<%= locals.oldData ? oldData.Teléfono : null%>">
+                            <% if (locals.errors && errors.Teléfono) { %>
+                              <div class="text-error"> 
+                                <%= errors.Teléfono.msg %>
+                              </div></p>
+
+
+                              <p><input style="width:600px" type="text" placeholder="E-mail" name="E-mail" class="w3-input w3-border" class="E-mail llenar form-control <%= locals.errors && errors.E-mail ? 'is-invalid' : null %>"           
+                                value= "<%= locals.oldData ? oldData.E-mail : null%>">
+                                <% if (locals.errors && errors.E-mail) { %>
+                                  <div class="text-error"> 
+                                    <%= errors.E-mail.msg %>
+                                  </div></p>
+                                  
+                                  <p><input style="width:600px" type="text" placeholder="Password" name="Password" class="w3-input w3-border" class="Password llenar form-control <%= locals.errors && errors.Password ? 'is-invalid' : null %>"           
+                                    value= "<%= locals.oldData ? oldData.Password : null%>">
+                                    <% if (locals.errors && errors.Password) { %>
+                                      <div class="text-error"> 
+                                        <%= errors.Password.msg %>
+                                      </div></p>       
+                
+                                      <p><input style="width:600px" type="text" placeholder="Confirmar Password" name="Confirmar-Password" class="w3-input w3-border" class="Confirmar-Password llenar form-control <%= locals.errors && errors.Confirmar-Password ? 'is-invalid' : null %>"           
+                                        value= "<%= locals.oldData ? oldData.Confirmar-Password : null%>">
+                                        <% if (locals.errors && errors.Confirmar-Password) { %>
+                                          <div class="text-error"> 
+                                            <%= errors.Confirmar-Password.msg %>
+                                          </div></p>       
+            
+            
+            </div>       
+                  <br>
+                    
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Ingrese una imagen de perfil</label>
+            <input type="file" name="images" accept=".jpg" id="images">
+            <% if (locals.errors && errors.images) { %>
+              <div class="text-error"> 
+                <%= errors.images.msg %>
+              </div>
+            <% } %>
+                  
+                                    
+                    <p>
+                      <button class="w3-button w3-black" type="submit">
+                         REGISTRAR 
+                      </button>
+                    </p>               
+                    
+                    
+                    <br>
+          
+          <div id="resetear">
+            <input type="Reset" value="Resetear">
+          </div>
+          </div>
+
+        </form>
+      </div>
+      </div>
+      
+      </div>
+      </div>
+      <script src="/public/images/js/scripValidFormRegistro.js"></script>
+        
+      
+      <%- include ('../partials/footer') %>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+       
+
+       
+
+ 
+  
+       
+
+
