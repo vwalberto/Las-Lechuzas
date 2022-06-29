@@ -32,7 +32,7 @@ const controlador = {
         const resultValidation = validationResult(req);
         
         if (resultValidation.errors.length > 0 ){
-            return res.render('uuarios/formRegistro', {
+            return res.render('usuarios/formRegistro', {
                 errors: resultValidation.mapped(),
                 oldData : req.body })
         }
@@ -162,6 +162,7 @@ const controlador = {
 
 
 login: (req, res) => {
+	console.log(res);
       res.render("usuarios/login");
 },
 

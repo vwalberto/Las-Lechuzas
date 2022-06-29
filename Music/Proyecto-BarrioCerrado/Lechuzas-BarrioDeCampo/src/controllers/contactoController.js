@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-let form = document.getElementById("form-contacto");
 
 const controlador = {
     contacto: (req, res) => {
@@ -8,14 +7,21 @@ const controlador = {
 },
 
 create: (req, res) => {
-    let error = "";
-   if(form.querySelector("input[name='Name']").length < 1) {
-        error += "_name";
-   
-}
-if(error == "") {
     
-}
+/*// 
+	create: (req, res) => {
+
+		const resultValidation = validationResult(req);
+				
+		if (resultValidation.errors.length > 0 ){
+			return res.render('contacto', {
+				errors: resultValidation.mapped(),
+                 oldData : req.body})
+		}
+
+*/
+
+
 },
 consulta: (req, res) => {
     res.render("usuarios/consulta")
