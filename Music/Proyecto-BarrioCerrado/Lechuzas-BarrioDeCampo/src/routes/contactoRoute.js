@@ -3,7 +3,7 @@ const router = express.Router();
 
 const controller = require('../controllers/contactoController')
 
-router.post('/nuevo', controller.consulta);
+router.post('/send', controller.send);
 
 // contacto 
 router.get('/', controller.contacto);

@@ -40,7 +40,6 @@ const controlador = {
 		console.log("Pasaste por procesoRegistro: " ,req.body)		
 		let images = req.file.filename
 		db.usuarios.create({
-			
 			nombre: req.body.nombre,
 			apellido: req.body.apellido,
 			dni: req.body.dni,
